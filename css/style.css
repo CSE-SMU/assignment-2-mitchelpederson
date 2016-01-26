@@ -1,0 +1,208 @@
+html {
+    position:relative;
+}
+
+div {
+    display: inline-block;
+}
+
+
+
+.center {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.face {
+    
+    background-color: #ffcd94;
+    width: 16em;
+    height: 20em;
+    border-radius: 12em;
+
+}
+
+.eyes { 
+    width: 100%;
+    height: 1.7rem;
+}
+
+.eye {
+    background-color: #ffffff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin-left: 4rem;
+}
+
+.eye:before {
+    position: relative;
+    content: " ";
+    display: block;
+    background-color: #ffcd94;
+    width: 2.5rem;
+    height: .5rem;
+    top: -1.1rem;
+    left: -0.3rem;
+    border-color: black;
+    border-width: 0.2rem;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-top-left-radius: 4rem;
+}
+
+.eye:after {
+     display: block;
+     position: absolute;
+     content: " ";
+     width: 1rem;
+     height: 1rem;
+     border-radius: 1rem;
+     top: 0.4rem;
+     background-color: #000000;
+     border-color: #00AAAA;
+     border-width: 0.3rem;
+     border-style: solid;
+}
+
+.nose {
+    width: 2.5rem;
+    height: 3rem;
+    background-color: #eebc83;
+    top: 6rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+}
+
+.nose:before {
+    content: "\2022";
+    font-size: 2rem;
+    position:absolute;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #eebc83;
+    border-radius: 1.5rem;
+    margin-top:60%;
+    left: -15%;
+}
+
+.nose:after {
+    content: "\2022";
+    font-size: 2rem;
+    position:absolute;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #eebc83;
+    border-radius: 1.5rem;
+    margin-top:60%;
+    right: -15%;
+}
+
+.mouth {
+ 
+    position: absolute;
+    display: inline-block;
+    overflow:hidden;
+    width: 8rem;
+    height: 1.6rem;
+    top: 14rem;
+}
+
+.mouth:before {
+    overflow: hidden;
+    position: absolute;
+    display: inline-block;
+    background-color: #000000;
+    font-family:arial;
+    content: "";
+    width: 8rem;
+    height: 10rem;
+    border-radius: 6rem;
+    margin-top: -8rem;
+
+
+}
+
+.mouth:after {
+    display: block;
+    overflow: hidden;
+    font-family:arial;
+    content: " ";
+    position: absolute;
+    background-color: #FF0000;
+    width: 4rem;
+    border-radius: 4rem;
+    height:2rem;
+    margin-top: 1rem;
+    margin-left:2rem;
+
+}
+
+.hair {
+    overflow:hidden;
+    width: 16rem;
+    height: 7rem;
+
+}
+
+.hair:before {
+    content: " ";
+    overflow: hidden;
+    display: inline-block;
+    width: 16rem;
+    height:20rem;
+    background-color: #804000;
+    border-radius:12em;
+}
+
+.hair:after {
+    content: " ";
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom-color:#ffcd94;
+    border-bottom-style: solid;
+    border-bottom-width: 2rem;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    top: 5rem;
+    left: 12rem;
+}
+
+.ears {
+    content: " ";
+    width: 16rem;
+    height: 2.5rem;
+}
+
+.ears:before {
+    content: " ";
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    background-color: #eebc83;
+    left: -1.25rem;
+    top: 0.5rem;
+    z-index: -1;
+}
+
+.ears:after {
+    content: " ";
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    background-color: #eebc83;
+    right: -1.25rem;
+    top: 0.5rem;
+    z-index: -1;
+}
